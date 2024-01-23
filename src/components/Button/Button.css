@@ -1,3 +1,68 @@
 button {
   font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  
+  &:hover {
+    box-shadow: 3px 1px 10px 0.5px rgb(201, 201, 201);
+  }
+  &:disabled {
+    cursor: not-allowed;
+    border: none;
+    background-color: #ebebeb;
+    color: #c5c4c4;
+    box-shadow: none;
+  }
+
+  
+}
+
+.contain {
+  background-color: #9b61ff;
+  color: white;
+  margin: auto;
+  border: none;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid #9b61ff;
+  color: #9b61ff;
+}
+.small {
+  font-size: 14px;
+}
+.large {
+  font-size: 25px;
+}
+
+.button-content-hidden {
+  opacity: 0;
+  /* visibility: hidden; */
+  transform: scale(0.7);
+  transition: 0.1s;
+}
+
+.button-loader {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+    @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
 }
