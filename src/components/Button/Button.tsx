@@ -20,7 +20,7 @@ const Button = (props: ButtonProps) => {
   const { label, classes, isLoading, isDisabled, handleOnClick, children, ...rest} = props
   return (
     <button
-      className={`${classes}`}
+      className={`contain ${classes}`}
       disabled={isDisabled || isLoading}
       onClick={handleOnClick}
       {...rest}

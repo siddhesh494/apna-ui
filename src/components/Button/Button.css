@@ -2,7 +2,9 @@ button {
   font-size: 20px;
   padding: 10px 30px;
   border-radius: 5px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     box-shadow: 3px 1px 10px 0.5px rgb(201, 201, 201);
   }
@@ -20,11 +22,8 @@ button {
 .contain {
   background-color: #9b61ff;
   color: white;
-  margin: auto;
   border: none;
-  display: flex;
-    justify-content: center;
-    align-items: center;
+  
 }
 
 .outline {
@@ -58,11 +57,11 @@ button {
   animation: rotation 1s linear infinite;
 }
 
-    @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
