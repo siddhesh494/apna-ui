@@ -4,7 +4,7 @@ import './Button.css'
 export interface ButtonProps {
   label?: string,
   children?: any,
-  classes: string,
+  classes?: string,
   isLoading?: boolean,
   isDisabled?: boolean,
   handleOnClick?: () => void
