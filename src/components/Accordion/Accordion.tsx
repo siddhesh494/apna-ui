@@ -13,8 +13,6 @@ type Props = {
     accordionIcon?: string,
     
   },
-  upIcon?: string,
-  downIcon?: string
 }
 
 const Accordion = (props: Props) => {
@@ -35,7 +33,7 @@ const Accordion = (props: Props) => {
         <span
           className={props.classes?.accordionIcon || `accordion-icon-style`}
         >
-          {props.isOpen ? props.upIcon || '\u2212': props.downIcon || '\u002B'}
+          {props.isOpen ? '\u2212': '\u002B'}
         </span>
       </div>
       
